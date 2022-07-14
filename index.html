@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/ad9691ee5d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/todolist-logo-bordeado.ico" type="image/x-icon">
+    <title>To-do List App - by Facyn</title>
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="title">To-do List</h1>
+        <button class="theme-light"><i class="fa-solid fa-sun"></i></button>
+        <button class="theme-dark"><i class="fa-solid fa-moon"></i></button>
+    </header>
+
+    <div class="todolist-container">
+        <input type="text" id="newTodo" class="new-todo" placeholder="Agrega una nueva tarea...">
+        <button class="add-todo" id="addTodo">Agregar</button>
+    </div>
+    <div class="note">
+        <p>¡Haz click en la palomita a la tarea que hayas completado!</p>
+    </div>
+    <div id="messageError"></div>
+    <div class="list" id="list">
+    </div>
+</body>
+<script src="./assets/js/main.js"></script>
+</html>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poopins', sans-serif;
+}
+
+body {
+    background: #183153;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #B5FFE3;
+}
+
+header button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s ease;
+    background: transparent;
+    border: 2px solid #183153;
+}
+
+header button:hover {
+    background: #183153;
+    color: #B5FFE3;
+    cursor: pointer;
+}
+
+.title {
+    color: #183153;
+    text-align: center;
+}
+
+.theme-dark {
+    display: none;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s ease;
+    background: transparent;
+    border: 2px solid #B5FFE3;
+    color: #B5FFE3;
+}
+
+.theme-dark:hover {
+    background: #B5FFE3;
+    color: #183153;
+}
+
+#messageError {
+    display: none;
+    text-align: center;
+    width: 66%;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 0, 0, .3);
+    color: #fff;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+.todolist-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    width: 70%;
+}
+
+.todolist-container input {
+    padding: 15px;
+    outline: none;
+    border: none;
+    color: #B5FFE3;
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    border-bottom: 1.5px solid #B5FFE3;
+}
+
+.todolist-container button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+    background: #B5FFE3;
+}
+
+.todolist-container button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.note {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    color: #B5FFE3;
+    width: 66%;
+    border-left: 2px solid #B5FFE3;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list .todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 20px;
+    background: #B5FFE3;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.list .todo > .actions-uncheck {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions-check i, .actions-uncheck i {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.actions-check i:hover, .actions-uncheck i:hover {
+    transform: scale(1.2);
+}
+
+.list .todo > .actions-check {
+    display: none;
+}
+
+.list .todo.checked {
+    color: #fff;
+    background: transparent;
+    border: 3px solid #B5FFE3;
+}
+
+.list .todo.checked > .actions-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list .todo.checked > .actions-uncheck {
+    display: none;
+}
